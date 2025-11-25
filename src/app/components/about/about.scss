@@ -1,0 +1,97 @@
+.about-section {
+    padding: 4rem 1.5rem;
+    background-color: #000;
+    /* Pure Black */
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    @media (min-width: 768px) {
+        padding: 8rem 2rem;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+        color: #fff;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+
+    .description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #a1a1aa;
+        /* Zinc 400 */
+        margin-bottom: 4rem;
+        font-weight: 400;
+
+        @media (min-width: 768px) {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .features-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+
+        @media (min-width: 768px) {
+            gap: 4rem;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            @media (min-width: 768px) {
+                gap: 1.5rem;
+            }
+
+            .icon {
+                font-size: 3rem;
+                margin-bottom: 0.5rem;
+                color: #FFD700;
+                filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.4));
+                transition: transform 0.3s ease;
+
+                @media (min-width: 768px) {
+                    font-size: 3.5rem;
+                }
+            }
+
+            &:hover .icon {
+                transform: scale(1.1);
+            }
+
+            .text {
+                font-weight: 700;
+                color: #fff;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+
+                @media (min-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
